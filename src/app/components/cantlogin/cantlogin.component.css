@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* mystyle {
+    background-color: #920606 !important;
+    height: 100%;
+    background: url('../assets/TrustBanc/pie.png'); 
+    url('../assets/TrustBanc/patterns.png'), url('../assets/TrustBanc/Group1.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+} */
+.content{
+    position: absolute;
+    width: 550px;
+    margin: 0 auto;
+    /* left: 445px; */
+    /* top: 273px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+.logo{
+    margin: 50px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-container{
+    background: #00399B;
+    max-width: 550px;;
+    box-shadow: 3px 3px 10px rgba(0, 57, 155, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+}
+.captext{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin: 0 0 8px;
+}
+.subcaptext{
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin: 0 0 56px;
+}
+.form-control{
+    background: #023182;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 0;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 30px 0px 25px;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+}
+/* input::placeholder{
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.9;
+} */
+button{
+    background: #FFFFFF;
+    border-radius: 6px;
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #00399B;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    cursor: pointer;
+    padding: 15px;
+}
+.form-group{
+    position: relative;
+}
+
+.lab {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.9;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+    left: 0px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    line-height: 14px;
+} 
+.pass{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding: 15px;
+    opacity: 0.9;
+    color: rgba(255, 255, 255, 0.8);
+}
+.info{
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 25px 0;
+}
+.info a{
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
