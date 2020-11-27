@@ -1,16 +1,16 @@
-<div class="container-fluid">
+<div class="container-fluid auth">
     <div class="wrapper">
       <div class="content">
         <div class="logo">
           <img src="../assets/image 1.svg" alt="TrustBanc Logo">
         </div>
-  
-        <form class="form-container" action="">
+        <img src="../../../assets/TrustBanc/patterns.png" alt="pattern" class="pattern1">
+        <form class="form-container" action="" #userPost="ngForm" (ngSubmit) ="onSubmit(userPost.value)">
           <h2 class="captext">Can't login?</h2>
           <p class="subcaptext">We'll send a recovery link to your email.</p>
   
           <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="" required>
+            <input type="email" class="form-control" name="email" placeholder="" required ngModel>
             <label class="lab" for="email">Email Address</label>
           </div>
           <div class="cta">
@@ -18,6 +18,7 @@
           </div>
           <p class="info"><a routerLink="/welcome">Found a way?</a></p>
         </form>
+        <img src="../../../assets/TrustBanc/Group1.png" alt="pattern" class="pattern2">
       </div>
     </div>
   </div>

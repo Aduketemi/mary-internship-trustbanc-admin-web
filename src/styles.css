@@ -10,4 +10,11 @@
 
 body{
     font-family: "Roboto";
+    /* background-color: #920606; */
+    height: 100%;
+    /* background: url('/src/assets/TrustBanc/pie.png') !important;  */
+    background-image: url(/src/assets/TrustBanc/pie.png) !important;
+    /* url('../assets/TrustBanc/patterns.png'), url('../assets/TrustBanc/Group1.png'); */
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }

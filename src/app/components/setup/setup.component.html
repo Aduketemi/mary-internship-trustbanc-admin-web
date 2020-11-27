@@ -1,31 +1,32 @@
-<div class="container-fluid">
+<div class="container-fluid auth">
     <div class="wrapper">
       <div class="content">
         <div class="logo">
           <img src="../assets/image 1.svg" alt="TrustBanc Logo">
         </div>
-  
-        <form class="form-container" action="">
+        <img src="../../../assets/TrustBanc/patterns.png" alt="pattern" class="pattern1">
+        <form class="form-container" action="" #userPost="ngForm" (ngSubmit) ="onSubmit(userPost.value)">
           <h2 class="captext">Setup your account</h2>
           <p class="subcaptext">Enter details to complete your profile</p>
   
           <div class="form-group">
-            <input type="text" class="form-control" name="firstname" placeholder="" required>
+            <input type="text" class="form-control" name="firstname" placeholder="" required ngModel>
             <label class="lab" for="firstname">First Name</label>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="lastname" placeholder="" required>
+            <input type="text" class="form-control" name="lastname" placeholder="" required ngModel>
             <label class="lab" for="lastname">Last Name</label>
           </div>
           <div class="form-group">
             <img class="pass" src="../assets/Vector.png" alt="password">
-            <input type="password" class="form-control" name="password" placeholder="" required>
+            <input type="password" class="form-control" name="password" placeholder="" required ngModel>
             <label class="lab" for="password">Password</label>
           </div>
           <div class="cta">
             <button type="submit">Complete Profile</button>
           </div>
         </form>
+        <img src="../../../assets/TrustBanc/Group1.png" alt="pattern" class="pattern2">
       </div>
     </div>
   </div>

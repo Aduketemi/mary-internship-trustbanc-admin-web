@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-setpassword',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetpasswordComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(data:object){
+    this.http.post('http://eldorado.trustbancgroup.com/v1/admin/auth/password/reset', data).subscribe((result) => {console.log("result", result)})
+    console.log(data)
   }
 
 }
